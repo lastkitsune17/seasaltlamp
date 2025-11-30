@@ -81,14 +81,16 @@
         background: #0ea5e9;
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
     "react-intersection-observer": "https://aistudiocdn.com/react-intersection-observer@^10.0.0"
   }
 }
@@ -96,5 +98,6 @@
 </head>
   <body class="bg-foam dark:bg-sea-950 text-slate-900 dark:text-sea-50 antialiased selection:bg-cyan-200 selection:text-sea-900 transition-colors duration-500">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
