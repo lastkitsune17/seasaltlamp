@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PRODUCT_NAME, PRODUCT_TAGLINE } from '../constants';
+import { PRODUCT_NAME, PRODUCT_TAGLINE, PRODUCT_DESCRIPTION } from '../constants';
 import { IMAGES } from '../assets/images';
 
 export const Hero: React.FC = () => {
@@ -17,13 +17,13 @@ export const Hero: React.FC = () => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-cyan-700 dark:text-cyan-300 uppercase bg-cyan-50 dark:bg-sea-900/50 rounded-full border border-cyan-200 dark:border-sea-700 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-cyan-500 dark:bg-cyan-400 animate-pulse"></span>
-            Ocean Series 2024
+            Nyala lampu, Nyalakan peduli
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-sea-950 dark:text-white tracking-tight leading-[1.1] mb-6">
             {PRODUCT_NAME}
           </h1>
           <p className="text-xl text-sea-700 dark:text-sea-300 mb-10 leading-relaxed max-w-lg">
-            {PRODUCT_TAGLINE} Flows like water, built like a fortress. Dive into the next generation of design.
+            {PRODUCT_DESCRIPTION}
           </p>
         </motion.div>
 
@@ -50,8 +50,8 @@ export const Hero: React.FC = () => {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
               </div>
               <div>
-                <p className="text-xs text-sea-500 dark:text-sea-400 font-semibold uppercase">Performance</p>
-                <p className="text-lg font-bold text-sea-900 dark:text-white">Top Rated</p>
+                <p className="text-xs text-sea-500 dark:text-sea-400 font-semibold uppercase">Energy</p>
+                <p className="text-lg font-bold text-sea-900 dark:text-white">Eco Power</p>
               </div>
             </div>
           </div>

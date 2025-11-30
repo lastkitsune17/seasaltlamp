@@ -8,10 +8,10 @@ export const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
                <div className="w-3 h-3 rounded-full bg-cyan-500"></div>
-               <span className="text-2xl font-bold text-white tracking-tighter">Lumina.</span>
+               <span className="text-2xl font-bold text-white tracking-tighter">Salt Lamp.</span>
             </div>
             <p className="text-sm text-sea-400 leading-relaxed">
-              Designing the future with the fluidity of water and the precision of nature.
+              Penerangan inovatif yang memanfaatkan kekuatan alam, dirancang untuk efisiensi dan keberlanjutan masa depan.
             </p>
           </div>
           
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
         
         <div className="border-t border-sea-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-sea-500">
-            © {new Date().getFullYear()} Lumina Inc. All rights reserved.
+            © {new Date().getFullYear()} Salt Lamp Inc. All rights reserved.
           </p>
           <div className="flex space-x-8 text-xs text-sea-500">
             <a href="#" className="hover:text-cyan-400 transition-colors">Privacy Policy</a>

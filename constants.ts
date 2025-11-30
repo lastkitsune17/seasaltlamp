@@ -1,38 +1,38 @@
-
 import { TeamMember, ProductFeature, ProductImage } from './types';
 import { IMAGES } from './assets/images';
 
-export const PRODUCT_NAME = "Lumina X1";
-export const PRODUCT_TAGLINE = "Redefining the boundaries of minimal aesthetics.";
+export const PRODUCT_NAME = "Salt Lamp";
+export const PRODUCT_TAGLINE = "Inovasi Energi dari Air Garam";
+export const PRODUCT_DESCRIPTION = "SALTLAMP adalah inovasi lampu penerangan portabel yang menggunakan air garam atau air laut sebagai sumber energi listrik utamanya. Produk ini bekerja berdasarkan prinsip reaksi elektrokimia yakni sel galvanik antara elektroda Magnesium dan Tembaga dan elektrolit untuk menyalakan lampu LED hemat energi.";
 
 export const PRODUCT_IMAGES: ProductImage[] = [
-  { id: '1', url: IMAGES.PRODUCT.GALLERY[0], alt: 'Lumina Front View' },
-  { id: '2', url: IMAGES.PRODUCT.GALLERY[1], alt: 'Lumina Side Profile' },
-  { id: '3', url: IMAGES.PRODUCT.GALLERY[2], alt: 'Lumina Lifestyle Shot' },
-  { id: '4', url: IMAGES.PRODUCT.GALLERY[3], alt: 'Lumina Detail' },
-  { id: '5', url: IMAGES.PRODUCT.GALLERY[4], alt: 'Lumina In Action' },
-  { id: '6', url: IMAGES.PRODUCT.GALLERY[5], alt: 'Lumina Abstract' },
+  { id: '1', url: IMAGES.PRODUCT.GALLERY[0], alt: 'Salt Lamp Front View' },
+  { id: '2', url: IMAGES.PRODUCT.GALLERY[1], alt: 'Salt Lamp Side Profile' },
+  { id: '3', url: IMAGES.PRODUCT.GALLERY[2], alt: 'Salt Lamp Lifestyle Shot' },
+  { id: '4', url: IMAGES.PRODUCT.GALLERY[3], alt: 'Salt Lamp Detail' },
+  { id: '5', url: IMAGES.PRODUCT.GALLERY[4], alt: 'Salt Lamp In Action' },
+  { id: '6', url: IMAGES.PRODUCT.GALLERY[5], alt: 'Salt Lamp Abstract' },
 ];
 
 export const PRODUCT_FEATURES: ProductFeature[] = [
   {
-    title: "Lightning Fast",
-    description: "Powered by the next-gen chipset, ensuring zero latency in your daily workflow.",
+    title: "Energi Air Garam",
+    description: "Hanya membutuhkan air garam atau air laut sebagai sumber energi listrik utama.",
     iconName: "Zap"
   },
   {
-    title: "Secure by Design",
-    description: "Enterprise-grade encryption built into the hardware core for ultimate privacy.",
-    iconName: "Shield"
+    title: "Reaksi Elektrokimia",
+    description: "Bekerja dengan prinsip sel galvanik antara elektroda Magnesium dan Tembaga.",
+    iconName: "Cpu"
   },
   {
-    title: "Featherlight Build",
-    description: "Aerospace-grade aluminum alloy makes it stronger yet 30% lighter.",
+    title: "LED Hemat Energi",
+    description: "Penerangan maksimal dengan efisiensi tinggi untuk penggunaan jangka panjang.",
     iconName: "Feather"
   },
   {
-    title: "Global Connectivity",
-    description: "Seamless 5G and satellite support keeps you connected anywhere on Earth.",
+    title: "Ramah Lingkungan",
+    description: "Solusi penerangan alternatif yang aman dan berkelanjutan tanpa limbah berbahaya.",
     iconName: "Globe"
   }
 ];

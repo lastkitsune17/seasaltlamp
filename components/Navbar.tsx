@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 
@@ -33,7 +32,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-cyan-500 dark:bg-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
           <span className={`text-2xl font-bold tracking-tighter ${isScrolled ? 'text-sea-900 dark:text-white' : 'text-sea-950 dark:text-white'}`}>
-            Lumina.
+            Salt Lamp.
           </span>
         </div>
 

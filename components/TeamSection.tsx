@@ -9,7 +9,7 @@ export const TeamSection: React.FC = () => {
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-sea-950 dark:text-white mb-6">Meet the Creators</h2>
           <p className="text-lg text-sea-700 dark:text-sea-300 max-w-2xl mx-auto">
-            The brilliant minds and passionate souls navigating the currents of innovation to bring Lumina to life.
+            The brilliant minds and passionate souls navigating the currents of innovation to bring Salt Lamp to life.
           </p>
         </div>
 

@@ -24,10 +24,10 @@ export const ProductDetails: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-cyan-600 dark:text-cyan-400 font-bold tracking-widest uppercase text-xs bg-cyan-50 dark:bg-sea-900 px-3 py-1 rounded-full">Fluid Capabilities</span>
-          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-sea-950 dark:text-white">Engineered Flow</h2>
+          <span className="text-cyan-600 dark:text-cyan-400 font-bold tracking-widest uppercase text-xs bg-cyan-50 dark:bg-sea-900 px-3 py-1 rounded-full">Teknologi Masa Depan</span>
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-sea-950 dark:text-white">Inovasi Berkelanjutan</h2>
           <p className="mt-6 text-xl text-sea-700 dark:text-sea-300 leading-relaxed">
-            Seamless integration of power and tranquility. Meticulously crafted to adapt to your environment like water.
+            Menghadirkan solusi penerangan yang memanfaatkan kekayaan alam laut, menggabungkan efisiensi energi dengan kepedulian lingkungan.
           </p>
         </div>
 
@@ -72,10 +72,10 @@ export const ProductDetails: React.FC = () => {
                 
                 <div className="absolute bottom-0 left-0 right-0 p-10 text-white">
                   <div className="w-16 h-1 bg-cyan-400 mb-6 rounded-full"></div>
-                  <p className="font-mono text-xs text-cyan-200 tracking-widest mb-2">SPECIFICATION 01</p>
-                  <h4 className="text-3xl font-bold mb-3">Hydro-Formed Body</h4>
+                  <p className="font-mono text-xs text-cyan-200 tracking-widest mb-2">SPESIFIKASI UTAMA</p>
+                  <h4 className="text-3xl font-bold mb-3">Reaksi Elektrokimia</h4>
                   <p className="text-sea-100 text-sm leading-relaxed opacity-90">
-                    Crafted from a single block of marine-grade aluminum alloy, ensuring maximum durability and thermal efficiency in any climate.
+                    Mengubah energi kimia dari larutan garam menjadi energi listrik melalui sel galvanik yang efisien dan aman digunakan di mana saja.
                   </p>
                 </div>
              </motion.div>
