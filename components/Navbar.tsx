@@ -1,43 +1,68 @@
+
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ShoppingBag } from 'lucide-react';
+import { Menu, X, Moon, Sun } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
+    
+    // Check system preference or stored value
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark');
+    }
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.classList.toggle('dark');
+  };
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/70 dark:bg-sea-950/80 backdrop-blur-lg shadow-sm border-b border-sea-100 dark:border-sea-800 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <div className="flex items-center">
-          <span className={`text-2xl font-bold tracking-tighter ${isScrolled ? 'text-slate-900' : 'text-slate-900'}`}>
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-cyan-500 dark:bg-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
+          <span className={`text-2xl font-bold tracking-tighter ${isScrolled ? 'text-sea-900 dark:text-white' : 'text-sea-950 dark:text-white'}`}>
             Lumina.
           </span>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#product" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Product</a>
-          <a href="#features" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Features</a>
-          <a href="#team" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Team</a>
-          <button className="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-transform active:scale-95 flex items-center gap-2">
-            <ShoppingBag size={16} />
-            Pre-order
+          <a href="#gallery" className="text-sm font-medium text-sea-700 dark:text-sea-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Product</a>
+          <a href="#features" className="text-sm font-medium text-sea-700 dark:text-sea-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Features</a>
+          <a href="#team" className="text-sm font-medium text-sea-700 dark:text-sea-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Team</a>
+          
+          <button 
+            onClick={toggleDarkMode}
+            className="p-2 rounded-full text-sea-700 dark:text-sea-200 hover:bg-sea-100 dark:hover:bg-sea-800 transition-colors"
+            aria-label="Toggle Dark Mode"
+          >
+            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-4">
+           <button 
+            onClick={toggleDarkMode}
+            className="text-sea-900 dark:text-white p-2 hover:bg-sea-50 dark:hover:bg-sea-800 rounded-full transition-colors"
+          >
+            {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
+          </button>
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-slate-900 p-2"
+            className="text-sea-900 dark:text-white p-2 hover:bg-sea-50 dark:hover:bg-sea-800 rounded-full transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -46,13 +71,10 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-4 flex flex-col space-y-4 border-t border-slate-100">
-          <a href="#product" className="text-lg font-medium text-slate-800" onClick={() => setIsMobileMenuOpen(false)}>Product</a>
-          <a href="#features" className="text-lg font-medium text-slate-800" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
-          <a href="#team" className="text-lg font-medium text-slate-800" onClick={() => setIsMobileMenuOpen(false)}>Team</a>
-          <button className="bg-blue-600 text-white w-full py-3 rounded-lg text-center font-semibold">
-            Pre-order Now
-          </button>
+        <div className="md:hidden absolute top-full left-0 w-full bg-white/95 dark:bg-sea-950/95 backdrop-blur-xl shadow-xl py-6 px-4 flex flex-col space-y-4 border-t border-sea-100 dark:border-sea-800">
+          <a href="#gallery" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Product</a>
+          <a href="#features" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
+          <a href="#team" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Team</a>
         </div>
       )}
     </nav>

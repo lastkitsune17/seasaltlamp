@@ -8,24 +8,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
-              primary: '#0f172a',
-              accent: '#3b82f6',
-              muted: '#64748b',
+              sea: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                400: '#38bdf8',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e',
+                950: '#082f49',
+              },
+              foam: '#f8fafc',
             },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
             },
             animation: {
               'scroll-left': 'scroll-left 40s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'float-delayed': 'float 6s ease-in-out 3s infinite',
+              'spin-slow': 'spin 12s linear infinite',
             },
             keyframes: {
               'scroll-left': {
                 '0%': { transform: 'translateX(0)' },
                 '100%': { transform: 'translateX(-50%)' },
               },
+              'float': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
             }
           },
         },
@@ -36,20 +55,30 @@
       body {
         font-family: 'Inter', sans-serif;
         overflow-x: hidden;
+        scroll-behavior: smooth;
       }
       /* Custom scrollbar for a premium feel */
       ::-webkit-scrollbar {
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #f1f5f9;
+        background: #f0f9ff;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #082f49;
       }
       ::-webkit-scrollbar-thumb {
-        background: #cbd5e1;
+        background: #7dd3fc;
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8;
+        background: #38bdf8;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #0369a1;
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #0ea5e9;
       }
     </style>
   <script type="importmap">
@@ -65,7 +94,7 @@
 }
 </script>
 </head>
-  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
+  <body class="bg-foam dark:bg-sea-950 text-slate-900 dark:text-sea-50 antialiased selection:bg-cyan-200 selection:text-sea-900 transition-colors duration-500">
     <div id="root"></div>
   </body>
 </html>

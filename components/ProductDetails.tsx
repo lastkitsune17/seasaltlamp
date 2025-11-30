@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { PRODUCT_FEATURES } from '../constants';
+import { IMAGES } from '../assets/images';
 import { Zap, Shield, Smartphone, Globe, Cpu, Feather } from 'lucide-react';
 
 const iconMap: Record<string, React.FC<any>> = {
@@ -15,36 +17,40 @@ export const ProductDetails: React.FC = () => {
   });
 
   return (
-    <section id="features" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-blue-600 font-semibold tracking-wide uppercase text-sm">Capabilities</span>
-          <h2 className="mt-2 text-4xl font-bold text-slate-900">Engineered for Excellence</h2>
-          <p className="mt-4 text-xl text-slate-600">
-            Every curve, every component, every pixel has been meticulously crafted to provide an unparalleled experience.
+    <section id="features" className="py-32 bg-white dark:bg-sea-950 relative overflow-hidden transition-colors duration-500">
+      {/* Background Bubbles */}
+      <div className="absolute top-20 left-10 w-64 h-64 bg-sea-50 dark:bg-sea-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-70 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-72 h-72 bg-cyan-50 dark:bg-cyan-900/10 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-70 animate-float-delayed"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="text-cyan-600 dark:text-cyan-400 font-bold tracking-widest uppercase text-xs bg-cyan-50 dark:bg-sea-900 px-3 py-1 rounded-full">Fluid Capabilities</span>
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-sea-950 dark:text-white">Engineered Flow</h2>
+          <p className="mt-6 text-xl text-sea-700 dark:text-sea-300 leading-relaxed">
+            Seamless integration of power and tranquility. Meticulously crafted to adapt to your environment like water.
           </p>
         </div>
 
         <div 
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center"
         >
-          <div className="order-2 md:order-1 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="order-2 md:order-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {PRODUCT_FEATURES.map((feature, index) => {
               const Icon = iconMap[feature.iconName] || Zap;
               return (
                 <motion.div 
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-slate-50 p-6 rounded-2xl hover:bg-blue-50 transition-colors group"
+                  className="bg-white dark:bg-sea-900/50 p-8 rounded-3xl border border-sea-100 dark:border-sea-800 hover:border-cyan-200 dark:hover:border-cyan-700 shadow-lg shadow-sea-100/50 dark:shadow-black/30 hover:shadow-xl hover:shadow-cyan-100/50 dark:hover:shadow-cyan-900/20 transition-all group"
                 >
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition-transform">
-                    <Icon size={24} />
+                  <div className="w-14 h-14 bg-sea-50 dark:bg-sea-800 rounded-2xl flex items-center justify-center text-cyan-600 dark:text-cyan-400 mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                    <Icon size={28} strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-2">{feature.title}</h3>
-                  <p className="text-slate-600 leading-relaxed text-sm">{feature.description}</p>
+                  <h3 className="text-xl font-bold text-sea-900 dark:text-white mb-3">{feature.title}</h3>
+                  <p className="text-sea-600 dark:text-sea-400 leading-relaxed text-sm">{feature.description}</p>
                 </motion.div>
               );
             })}
@@ -52,24 +58,30 @@ export const ProductDetails: React.FC = () => {
 
           <div className="order-1 md:order-2 relative">
              <motion.div
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 30 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8 }}
-                className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]"
+                className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-sea-900/20 dark:shadow-black/50 aspect-[4/5] border-8 border-white dark:border-sea-800"
              >
                 <img 
-                  src="https://picsum.photos/600/800?random=100" 
+                  src={IMAGES.PRODUCT.DETAIL}
                   alt="Product Detail Shot" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent text-white">
-                  <p className="font-mono text-xs opacity-70 mb-2">SPECIFICATION 01</p>
-                  <h4 className="text-2xl font-bold">Precision Machined</h4>
-                  <p className="text-slate-300 mt-2 text-sm">
-                    Crafted from a single block of aluminum for maximum durability and thermal efficiency.
+                <div className="absolute inset-0 bg-gradient-to-t from-sea-950/90 via-sea-900/20 to-transparent opacity-90"></div>
+                
+                <div className="absolute bottom-0 left-0 right-0 p-10 text-white">
+                  <div className="w-16 h-1 bg-cyan-400 mb-6 rounded-full"></div>
+                  <p className="font-mono text-xs text-cyan-200 tracking-widest mb-2">SPECIFICATION 01</p>
+                  <h4 className="text-3xl font-bold mb-3">Hydro-Formed Body</h4>
+                  <p className="text-sea-100 text-sm leading-relaxed opacity-90">
+                    Crafted from a single block of marine-grade aluminum alloy, ensuring maximum durability and thermal efficiency in any climate.
                   </p>
                 </div>
              </motion.div>
+             
+             {/* Decorative Circle */}
+             <div className="absolute -z-10 top-1/2 right-0 translate-x-1/3 -translate-y-1/2 w-72 h-72 border-2 border-dashed border-cyan-200 dark:border-sea-800 rounded-full animate-spin-slow opacity-50"></div>
           </div>
         </div>
       </div>
