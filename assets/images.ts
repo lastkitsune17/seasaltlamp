@@ -7,19 +7,19 @@
 export const IMAGES = {
   PRODUCT: {
     // Main Hero Image
-    HERO: "https://picsum.photos/800/1000?random=99", // Example local: '/images/hero-product.jpg'
+    HERO: "https://i.postimg.cc/VLfkG1Ks/Whats-App-Image-2025-11-30-at-14-16-41.jpg", 
     
     // Feature Section Detail Image
-    DETAIL: "https://picsum.photos/600/800?random=100", // Example local: '/images/product-detail.jpg'
+    DETAIL: "https://i.postimg.cc/Wb5bxKyR/Whats-App-Image-2025-11-30-at-14-15-22.jpg",
     
     // Gallery / Marquee Images
     GALLERY: [
-      "https://picsum.photos/800/600?random=1",
-      "https://picsum.photos/800/600?random=2",
-      "https://picsum.photos/800/600?random=3",
-      "https://picsum.photos/800/600?random=4",
-      "https://picsum.photos/800/600?random=5",
-      "https://picsum.photos/800/600?random=6",
+      "https://i.postimg.cc/L6x6G7WK/Whats-App-Image-2025-11-30-at-14-15-11.jpg",
+      "https://i.postimg.cc/Wb5bxKyR/Whats-App-Image-2025-11-30-at-14-15-22.jpg",
+      "https://i.postimg.cc/GhXh6Nfn/Whats-App-Image-2025-11-30-at-14-16-13.jpg",
+      "https://i.postimg.cc/VLfkG1Ks/Whats-App-Image-2025-11-30-at-14-16-41.jpg",
+      "https://i.postimg.cc/GhXh6Nfn/Whats-App-Image-2025-11-30-at-14-16-13.jpg",
+      "https://i.postimg.cc/VLfkG1Ks/Whats-App-Image-2025-11-30-at-14-16-41.jpg",
     ]
   },
   

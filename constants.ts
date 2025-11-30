@@ -40,42 +40,42 @@ export const PRODUCT_FEATURES: ProductFeature[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 't1',
-    name: "Elena Fisher",
-    role: "Lead Product Designer",
-    imageUrl: IMAGES.TEAM.ELENA,
-    bio: "Elena brings over 10 years of minimalist design philosophy, formerly at Dieter & Co.",
-    socials: { twitter: "#", linkedin: "#" }
+    name: "Muhammad Farhan",
+    role: "CEO",
+    imageUrl: IMAGES.TEAM.MARCUS,
+    bio: "Visionary leader driving the company towards new horizons and global impact with a focus on sustainable innovation.",
+    socials: { instagram: "https://www.instagram.com/mfarhanalqssm?igsh=MXNtcWNpZW9vbnVlMQ==" }
   },
   {
     id: 't2',
-    name: "David Chen",
-    role: "Senior Engineer",
-    imageUrl: IMAGES.TEAM.DAVID,
-    bio: "Architect of the Core-X engine. David ensures performance never compromises style.",
-    socials: { github: "#", linkedin: "#" }
+    name: "Inganatus Sholehkhah",
+    role: "Product Development",
+    imageUrl: IMAGES.TEAM.ELENA,
+    bio: "Leading the technical and design evolution of our product line, ensuring every detail meets our rigorous standards.",
+    socials: { instagram: "https://www.instagram.com/inganatus_sholekhah?igsh=c2FkMjllNTc4M3lj" }
   },
   {
     id: 't3',
-    name: "Sarah Jones",
-    role: "Head of Marketing",
+    name: "Anggun Valenscia",
+    role: "Partnership",
     imageUrl: IMAGES.TEAM.SARAH,
-    bio: "Storyteller in chief. Sarah connects human needs with technological solutions.",
-    socials: { twitter: "#" }
+    bio: "Building strategic alliances and cultivating relationships that expand our ecosystem and reach.",
+    socials: { instagram: "https://www.instagram.com/anggunvlns?igsh=aTExYXFkYzZybTI5" }
   },
   {
     id: 't4',
-    name: "Marcus Thorne",
-    role: "CTO",
-    imageUrl: IMAGES.TEAM.MARCUS,
-    bio: "Visionary leader focused on sustainable tech and long-term product evolution.",
-    socials: { linkedin: "#", github: "#" }
+    name: "Naura Atira Mardiah",
+    role: "Finance and Legality",
+    imageUrl: IMAGES.TEAM.JAMES,
+    bio: "Ensuring operational excellence, financial integrity, and regulatory compliance across all global operations.",
+    socials: { instagram: "https://www.instagram.com/ntrmrdh?igsh=eHIxcHJ0bG0xY2Z1" }
   },
   {
     id: 't5',
-    name: "James Wilson",
-    role: "Supply Chain Lead",
-    imageUrl: IMAGES.TEAM.JAMES,
-    bio: "Ensuring sustainable and ethical sourcing for every material used in Lumina X1.",
-    socials: { linkedin: "#" }
+    name: "Muhammad Rizki Dwifani",
+    role: "Brand, Marketing, and Design",
+    imageUrl: IMAGES.TEAM.DAVID,
+    bio: "Crafting the narrative that connects our technology with the people who need it most, driving brand resonance.",
+    socials: { instagram: "https://www.instagram.com/riz_artline?igsh=MXF6MTFteDJveWJrcg==" }
   }
 ];

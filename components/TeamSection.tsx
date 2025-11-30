@@ -1,6 +1,6 @@
 import React from 'react';
 import { TEAM_MEMBERS } from '../constants';
-import { Linkedin, Twitter, Github } from 'lucide-react';
+import { Linkedin, Twitter, Github, Instagram } from 'lucide-react';
 
 export const TeamSection: React.FC = () => {
   return (
@@ -32,6 +32,11 @@ export const TeamSection: React.FC = () => {
               </p>
               
               <div className="flex justify-center space-x-5 opacity-60 group-hover:opacity-100 transition-opacity pt-4 border-t border-sea-50 dark:border-sea-700">
+                {member.socials?.instagram && (
+                  <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-sea-400 dark:text-sea-500 hover:text-pink-600 dark:hover:text-pink-400 transition-colors transform hover:scale-110">
+                    <Instagram size={20} />
+                  </a>
+                )}
                 {member.socials?.twitter && (
                   <a href={member.socials.twitter} className="text-sea-400 dark:text-sea-500 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors transform hover:scale-110">
                     <Twitter size={20} />

@@ -8,6 +8,7 @@ export interface TeamMember {
     twitter?: string;
     linkedin?: string;
     github?: string;
+    instagram?: string;
   };
 }
 
