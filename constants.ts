@@ -12,7 +12,6 @@ export const PRODUCT_IMAGES: ProductImage[] = [
   { id: '3', url: IMAGES.PRODUCT.GALLERY[2], alt: 'Salt Lamp Lifestyle Shot' },
   { id: '4', url: IMAGES.PRODUCT.GALLERY[3], alt: 'Salt Lamp Detail' },
   { id: '5', url: IMAGES.PRODUCT.GALLERY[4], alt: 'Salt Lamp In Action' },
-  { id: '6', url: IMAGES.PRODUCT.GALLERY[5], alt: 'Salt Lamp Abstract' },
 ];
 
 export const PRODUCT_FEATURES: ProductFeature[] = [
