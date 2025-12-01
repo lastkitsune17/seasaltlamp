@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 
@@ -49,6 +50,15 @@ export const Navbar: React.FC = () => {
           >
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
+
+          <a 
+            href="https://wa.me/qr/ICW243DNKFWFP1" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-cyan-600 text-white px-5 py-2.5 rounded-full font-medium text-sm hover:bg-cyan-700 transition-colors shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transform hover:-translate-y-0.5"
+          >
+            Order Now
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -74,6 +84,15 @@ export const Navbar: React.FC = () => {
           <a href="#product" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Product</a>
           <a href="#features" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
           <a href="#team" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Team</a>
+          <a 
+            href="https://wa.me/qr/ICW243DNKFWFP1"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-lg font-bold text-cyan-600 dark:text-cyan-400" 
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Order Now
+          </a>
         </div>
       )}
     </nav>

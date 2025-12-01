@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ShoppingBag } from 'lucide-react';
 import { PRODUCT_NAME, PRODUCT_TAGLINE, PRODUCT_DESCRIPTION } from '../constants';
 import { IMAGES } from '../assets/images';
 
@@ -25,6 +26,16 @@ export const Hero: React.FC = () => {
           <p className="text-xl text-sea-700 dark:text-sea-300 mb-10 leading-relaxed max-w-lg">
             {PRODUCT_DESCRIPTION}
           </p>
+
+          <a 
+            href="https://wa.me/qr/ICW243DNKFWFP1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-cyan-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-cyan-700 transition-all shadow-xl shadow-cyan-500/30 hover:shadow-cyan-500/50 hover:-translate-y-1"
+          >
+            <ShoppingBag size={20} />
+            Order Now
+          </a>
         </motion.div>
 
         <motion.div 

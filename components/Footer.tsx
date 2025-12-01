@@ -21,6 +21,16 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm">
               <li><a href="#features" className="hover:text-cyan-400 transition-colors">Features</a></li>
               <li><a href="#features" className="hover:text-cyan-400 transition-colors">Pricing</a></li>
+              <li>
+                <a 
+                  href="https://wa.me/qr/ICW243DNKFWFP1" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-cyan-400 transition-colors font-medium text-cyan-300"
+                >
+                  Order Now
+                </a>
+              </li>
             </ul>
           </div>
 
