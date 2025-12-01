@@ -1,10 +1,11 @@
+
 import React from 'react';
 import { TEAM_MEMBERS } from '../constants';
 import { Linkedin, Twitter, Github, Instagram } from 'lucide-react';
 
 export const TeamSection: React.FC = () => {
   return (
-    <section id="team" className="py-32 bg-gradient-to-b from-white to-sea-100 dark:from-sea-900 dark:to-sea-950 transition-colors duration-500">
+    <section id="team" className="scroll-mt-24 py-32 bg-gradient-to-b from-white to-sea-100 dark:from-sea-900 dark:to-sea-950 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-sea-950 dark:text-white mb-6">Meet the Creators</h2>

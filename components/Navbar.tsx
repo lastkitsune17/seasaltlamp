@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#gallery" className="text-sm font-medium text-sea-700 dark:text-sea-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Product</a>
+          <a href="#product" className="text-sm font-medium text-sea-700 dark:text-sea-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Product</a>
           <a href="#features" className="text-sm font-medium text-sea-700 dark:text-sea-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Features</a>
           <a href="#team" className="text-sm font-medium text-sea-700 dark:text-sea-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Team</a>
           
@@ -71,7 +71,7 @@ export const Navbar: React.FC = () => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white/95 dark:bg-sea-950/95 backdrop-blur-xl shadow-xl py-6 px-4 flex flex-col space-y-4 border-t border-sea-100 dark:border-sea-800">
-          <a href="#gallery" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Product</a>
+          <a href="#product" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Product</a>
           <a href="#features" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
           <a href="#team" className="text-lg font-medium text-sea-800 dark:text-sea-100" onClick={() => setIsMobileMenuOpen(false)}>Team</a>
         </div>

@@ -6,7 +6,7 @@ import { IMAGES } from '../assets/images';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="product" className="relative min-h-screen flex items-center pt-20 pb-32 overflow-hidden bg-gradient-to-br from-sea-50 via-white to-cyan-50 dark:from-sea-950 dark:via-sea-900 dark:to-sea-950 transition-colors duration-500">
+    <section id="product" className="scroll-mt-24 relative min-h-screen flex items-center pt-20 pb-32 overflow-hidden bg-gradient-to-br from-sea-50 via-white to-cyan-50 dark:from-sea-950 dark:via-sea-900 dark:to-sea-950 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
         
         <motion.div 

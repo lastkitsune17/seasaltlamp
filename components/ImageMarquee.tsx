@@ -8,7 +8,7 @@ export const ImageMarquee: React.FC = () => {
   const marqueeImages = [...PRODUCT_IMAGES, ...PRODUCT_IMAGES];
 
   return (
-    <div id="gallery" className="py-24 bg-sea-950 overflow-hidden relative">
+    <div id="gallery" className="scroll-mt-24 py-24 bg-sea-950 overflow-hidden relative">
       <div 
         className="absolute inset-0 opacity-5"
         style={{ backgroundImage: `url(${IMAGES.TEXTURES.CUBES})` }}

@@ -17,7 +17,7 @@ export const ProductDetails: React.FC = () => {
   });
 
   return (
-    <section id="features" className="py-32 bg-white dark:bg-sea-950 relative overflow-hidden transition-colors duration-500">
+    <section id="features" className="scroll-mt-24 py-32 bg-white dark:bg-sea-950 relative overflow-hidden transition-colors duration-500">
       {/* Background Bubbles */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-sea-50 dark:bg-sea-900/20 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-70 animate-float"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-cyan-50 dark:bg-cyan-900/10 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-70 animate-float-delayed"></div>
