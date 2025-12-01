@@ -75,7 +75,7 @@ export const ProductDetails: React.FC = () => {
                   <p className="font-mono text-xs text-cyan-200 tracking-widest mb-2">SPESIFIKASI UTAMA</p>
                   <h4 className="text-3xl font-bold mb-3">Reaksi Elektrokimia</h4>
                   <p className="text-sea-100 text-sm leading-relaxed opacity-90">
-                    Mengubah energi kimia dari larutan garam menjadi energi listrik melalui sel galvanik yang efisien dan aman digunakan di mana saja.
+                    Mengubah energi kimia dari larutan garam menjadi energi listrik melalui prinsip sel elektrolisis antara anoda dan katoda yang efisien.
                   </p>
                 </div>
              </motion.div>

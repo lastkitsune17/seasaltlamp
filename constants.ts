@@ -4,7 +4,7 @@ import { IMAGES } from './assets/images';
 
 export const PRODUCT_NAME = "Salt Lamp";
 export const PRODUCT_TAGLINE = "Inovasi Energi dari Air Garam";
-export const PRODUCT_DESCRIPTION = "SALTLAMP adalah inovasi lampu penerangan portabel yang menggunakan air garam atau air laut sebagai sumber energi listrik utamanya. Produk ini bekerja berdasarkan prinsip reaksi elektrokimia yakni sel galvanik antara elektroda Magnesium dan Tembaga dan elektrolit untuk menyalakan lampu LED hemat energi.";
+export const PRODUCT_DESCRIPTION = "SALTLAMP adalah sebuah inovasi penerangan yang dikembangkan untuk mengatasi kelangkaan sumber cahaya yang stabil dan terjangkau di wilayah pesisir khususnya bagi nelayan, dengan memanfaatkan prinsip elektrolisis di mana air garam atau air laut bertindak sebagai larutan elektrolit alami. Sistem ini menggunakan sepasang elektroda logam seperti tembaga (Cu), yang bereaksi secara kimiawi dengan air garam untuk menyalakan lampu LED HPL berdaya rendah";
 
 export const PRODUCT_IMAGES: ProductImage[] = [
   { id: '1', url: IMAGES.PRODUCT.GALLERY[0], alt: 'Salt Lamp Front View' },
@@ -22,7 +22,7 @@ export const PRODUCT_FEATURES: ProductFeature[] = [
   },
   {
     title: "Reaksi Elektrokimia",
-    description: "Bekerja dengan prinsip sel galvanik antara elektroda Magnesium dan Tembaga.",
+    description: "Bekerja dengan prinsip sel elektrolisis antara anoda dan katoda.",
     iconName: "Cpu"
   },
   {
