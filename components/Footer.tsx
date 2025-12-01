@@ -20,8 +20,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-6 tracking-wide">Product</h4>
             <ul className="space-y-3 text-sm">
               <li><a href="#features" className="hover:text-cyan-400 transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">Specifications</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">Pricing</a></li>
+              <li><a href="#features" className="hover:text-cyan-400 transition-colors">Pricing</a></li>
             </ul>
           </div>
 
