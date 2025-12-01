@@ -25,7 +25,7 @@ export const IMAGES = {
   
   TEAM: {
     FARHAN: "https://i.postimg.cc/B8jphyF6/IMG-20251130-WA0032.jpg",
-    INGANATUS: "https://i.postimg.cc/RWsGL9WH/IMG-20251130-WA0029",
+    INGANATUS: "https://i.postimg.cc/RWsGL9WH/IMG-20251130-WA0029.jpg",
     ANGGUN: "https://i.postimg.cc/tsSDNysQ/IMG-20251130-WA0031.jpg",
     NAURA: "https://i.postimg.cc/PC3KQhC8/IMG-20251130-WA0030.jpg",
     RIZKI: "https://i.postimg.cc/MnPtmxnB/IMG-20251130-WA0033.jpg",
