@@ -10,7 +10,7 @@ export const IMAGES = {
     HERO: "https://i.postimg.cc/rFZbWKzw/Whats-App-Image-2025-12-01-at-11-45-32.jpg", 
     
     // Feature Section Detail Image
-    DETAIL: "https://i.postimg.cc/MK34RvXX/Whats-App-Image-2025-12-01-at-11-46-35.jpg",
+    DETAIL: "https://i.postimg.cc/HkBNwzzp/unnamed.jpg",
     
     // Gallery / Marquee Images
     GALLERY: [
