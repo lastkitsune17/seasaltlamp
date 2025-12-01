@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const Footer: React.FC = () => {
@@ -5,7 +6,7 @@ export const Footer: React.FC = () => {
     <footer className="bg-sea-950 text-sea-200 py-16 border-t border-sea-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1">
             <div className="flex items-center gap-2 mb-6">
                <div className="w-3 h-3 rounded-full bg-cyan-500"></div>
                <span className="text-2xl font-bold text-white tracking-tighter">Salt Lamp.</span>
@@ -18,18 +19,16 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-semibold mb-6 tracking-wide">Product</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">Features</a></li>
+              <li><a href="#features" className="hover:text-cyan-400 transition-colors">Features</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">Specifications</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">Pricing</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white font-semibold mb-6 tracking-wide">Company</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">Press</a></li>
+              <li><a href="#team" className="hover:text-cyan-400 transition-colors">About Us</a></li>
             </ul>
           </div>
         </div>
@@ -38,10 +37,6 @@ export const Footer: React.FC = () => {
           <p className="text-xs text-sea-500">
             © {new Date().getFullYear()} Salt Lamp Inc. All rights reserved.
           </p>
-          <div className="flex space-x-8 text-xs text-sea-500">
-            <a href="#" className="hover:text-cyan-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-cyan-400 transition-colors">Terms of Service</a>
-          </div>
         </div>
       </div>
     </footer>
