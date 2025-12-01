@@ -24,11 +24,11 @@ export const IMAGES = {
   },
   
   TEAM: {
-    ELENA: "https://picsum.photos/400/400?random=10",
-    DAVID: "https://picsum.photos/400/400?random=11",
-    SARAH: "https://picsum.photos/400/400?random=12",
-    MARCUS: "https://picsum.photos/400/400?random=13",
-    JAMES: "https://picsum.photos/400/400?random=14",
+    FARHAN: "https://i.postimg.cc/B8jphyF6/IMG-20251130-WA0032.jpg",
+    INGANATUS: "https://i.postimg.cc/RWsGL9WH/IMG-20251130-WA0029.jpg",
+    ANGGUN: "https://i.postimg.cc/PC3KQhC8/IMG-20251130-WA0030.jpg",
+    NAURA: "https://i.postimg.cc/N0YVYjYb/IMG-20251130-WA0030.jpg",
+    RIZKI: "https://i.postimg.cc/MnPtmxnB/IMG-20251130-WA0033.jpg",
   },
   
   TEXTURES: {
